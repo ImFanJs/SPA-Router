@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <title>Router App</title>
+  </head>
+  <body>
+    <header class="my-3 text-center">
+      <button class="btn btn-primary" onclick="router.loadRoute('/')">
+        Home
+      </button>
+      <button class="btn btn-primary" onclick="router.loadRoute('/contact')">
+        Contact
+      </button>
+      <button class="btn btn-primary" onclick="router.loadRoute('/about')">
+        About me
+      </button>
+      <button class="btn btn-primary" onclick="router.loadRoute('/other')">
+        Other
+      </button>
+    </header>
+
+    <div
+      class="border d-flex justify-content-center align-items-center"
+      style="height: 80vh"
+      data-outlet
+    ></div>
+
+    <script src="routes.js"></script>
+    <script src="router.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
